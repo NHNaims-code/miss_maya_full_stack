@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+#light{
+  min-height: 100vh;
+  background-color: #E5E8ED;
+  color: #222222;
+}
+#dark{
+  min-height: 100vh;
+  background-color: #222222;
+  color: #BFBFBF;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+h4{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.text-golden-bold{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FACB30 -18%, #FEF9C8 22.5%, #C49530 67.84%, #FFF8C4 116%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-golden-normal{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FACB30 -18%, #FEF9C8 22.5%, #C49530 67.84%, #FFF8C4 116%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg__golden {
+  background: linear-gradient(90deg, #AF7B27 -8.11%, #D2AE4D 21.74%, #F8E17B 43.7%, #CEA54D 70.72%, #F7E27B 92.12%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

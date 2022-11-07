@@ -1,0 +1,33 @@
+#light .neu_up__container{
+  display: inline-block;
+  background: #E5E8ED;
+  color: #222222;
+  padding: 10px;
+  box-shadow: 5px 13px 15px rgba(152, 151, 151, 0.68), -4px -8px 10px rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+#dark .neu_up__container{
+  display: inline-block;
+  background: #222222;
+  color: #BFBFBF;
+  padding: 10px;
+  box-shadow: 5px 13px 15px rgba(0, 0, 0, 0.68), -10px -5px 15px #2E2C2C;
+  border-radius: 10px;
+}
+
+#light .neu_down__container{
+  display: inline-block;
+  padding: 10px;
+  background: #E5E8ED;
+  color: #222222;
+  box-shadow: inset -4px 8px 13px rgba(152, 151, 151, 0.68), inset -1px -8px 13px rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+#dark .neu_down__container{
+  display: inline-block;
+  padding: 10px;
+  background: #222222;
+  color: #BFBFBF;
+  box-shadow: inset -5px -5px 7px rgba(54, 53, 53, 0.85), inset 6px 6px 19px rgba(0, 0, 0, 0.94);
+  border-radius: 10px;
+}

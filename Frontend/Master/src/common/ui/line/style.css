@@ -1,0 +1,35 @@
+#light .neu_horizontal__line{
+  display: inline-block;
+  height: 7px;
+  width: 97px;
+  background: #E5E8ED;
+  box-shadow: inset 1px -1px 2px rgba(68, 68, 68, 0.31), inset -1px 0px 1px rgba(154, 153, 153, 0.71);
+  border-radius: 13px;
+}
+
+#dark .neu_horizontal__line{
+  display: inline-block;
+  height: 7px;
+  width: 97px;
+  background: #000000;
+  box-shadow: inset 1px -1px 2px rgba(68, 68, 68, 0.31), inset -1px 0px 1px rgba(154, 153, 153, 0.71);
+  border-radius: 13px;
+}
+
+#light .neu_vertical__line{
+  display: inline-block;
+  height: 97px;
+  width: 7px;
+  background: #E5E8ED;
+  box-shadow: inset 1px -1px 2px rgba(68, 68, 68, 0.31), inset -1px 0px 1px rgba(154, 153, 153, 0.71);
+  border-radius: 13px;
+}
+
+#dark .neu_vertical__line{
+  display: inline-block;
+  height: 97px;
+  width: 7px;
+  background: #000000;
+  box-shadow: inset 1px -1px 2px rgba(68, 68, 68, 0.31), inset -1px 0px 1px rgba(154, 153, 153, 0.71);
+  border-radius: 13px;
+}

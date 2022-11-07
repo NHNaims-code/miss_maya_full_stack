@@ -1,0 +1,34 @@
+#light .neu_search__input_root{
+  background: #E5E8ED;
+  box-shadow: inset -4px 8px 13px rgba(152, 151, 151, 0.68), inset -1px -8px 13px rgba(255, 255, 255, 0.7);
+  border-radius: 45px;
+}
+
+#dark .neu_search__input_root{
+  background: #222222;
+  box-shadow: inset -7px -6px 11px rgba(46, 44, 44, 0.99), inset 6px 9px 16px rgba(0, 0, 0, 0.8);
+  border-radius: 45px;
+}
+
+#light .neu_search__input{
+  padding: 24px;
+  background: transparent;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+#dark .neu_search__input{
+  padding: 24px;
+  background: transparent;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #7C7A7A;
+}

@@ -1,0 +1,11 @@
+#light .header__root{
+  padding: 6px 32px;
+  background: #E5E8ED;
+  box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.6);
+}
+
+#dark .header__root{
+  padding: 6px 32px;
+  background: #222222;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.94);
+}

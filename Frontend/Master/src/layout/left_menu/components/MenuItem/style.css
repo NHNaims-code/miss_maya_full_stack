@@ -1,0 +1,4 @@
+#light .left_menu__expand_root{}
+#dark .left_menu__expand_root{
+  background-color: #222;
+}

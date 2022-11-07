@@ -1,0 +1,6 @@
+#light .header__fixed{
+  background-color: #E5E8ED;
+}
+#dark .header__fixed{
+  background-color: #222222;
+}

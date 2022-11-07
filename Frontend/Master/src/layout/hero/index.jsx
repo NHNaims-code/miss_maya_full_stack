@@ -1,5 +1,5 @@
 import React from 'react'
-import NeuHorizontalLine from '../../common/ui/line/NeuHorizontalLine'
+import NeuHorizontalLine from '../../common/ui/line/NeuHorizontalLineDown'
 import Profile from './components/profile'
 import HeroSlider from './components/slider'
 import './style.css'

@@ -1,8 +1,8 @@
 import React from 'react'
 import NeuDownContainer from '../../common/ui/container/NeuDownContainer'
 import NeuUpContainer from '../../common/ui/container/NeuUpContainer'
-import NeuHorizontalLine from '../../common/ui/line/NeuHorizontalLine'
-import NeuVerticalLine from '../../common/ui/line/NeuVerticalLine'
+import NeuHorizontalLine from '../../common/ui/line/NeuHorizontalLineDown'
+import NeuVerticalLine from '../../common/ui/line/NeuVerticalLineDown'
 import Layout from '../../layout'
 
 export default function Dashboard() {

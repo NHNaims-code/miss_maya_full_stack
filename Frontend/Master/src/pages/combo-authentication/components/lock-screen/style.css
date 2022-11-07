@@ -1,0 +1,51 @@
+#light .sign_in_profile_image__root{
+  width: 90px;
+  height: 130px;
+  border: 8px solid #EFF4F8;
+  box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #A0B9D0;
+  filter: drop-shadow(4px 4px 8px #BCCBDA) drop-shadow(-4px -4px 8px #FFFFFF);
+  border-radius: 50px;
+  overflow: hidden;
+}
+#dark .sign_in_profile_image__root{
+
+}
+
+#light .profile_page__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2B2B2E;
+}
+#dark .profile_page__title{
+}
+
+#light .sign_in__dont_have_account{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+#dark .sign_in__dont_have_account{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  /* color: #000000; */
+}
+
+
+/* Emargency */
+#light .lock_screen__popup{
+  background-color: #EFF4F8;
+}
+#dark .lock_screen__popup{
+
+}

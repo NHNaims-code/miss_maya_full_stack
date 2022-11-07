@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import NeuVerticalLine from '../../common/ui/line/NeuVerticalLine'
+import NeuVerticalLine from '../../common/ui/line/NeuVerticalLineDown'
 import './style.css'
 import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill, RiTwitterFill, RiLinkedinFill, RiDribbbleFill, RiPinterestLine, RiYoutubeFill } from "react-icons/ri";

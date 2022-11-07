@@ -24,7 +24,6 @@
   box-shadow: inset 1px -1px 2px rgba(68, 68, 68, 0.31), inset -1px 0px 1px rgba(154, 153, 153, 0.71);
   border-radius: 13px;
 }
-
 #dark .neu_vertical__line{
   display: inline-block;
   height: 97px;
@@ -32,4 +31,14 @@
   background: #000000;
   box-shadow: inset 1px -1px 2px rgba(68, 68, 68, 0.31), inset -1px 0px 1px rgba(154, 153, 153, 0.71);
   border-radius: 13px;
+}
+
+#light .neu_horizontal_line_up__root{
+  width: 150px;
+  height: 2px;
+  background: #EFF4F8;
+  box-shadow: 1px 1px 1px #B6C8DA, -1px -1px 1px #FFFFFF;
+}
+#dark .neu_horizontal_line_up__root{
+
 }

@@ -1,0 +1,102 @@
+#light .neu_action_button__root{
+  background: #EFF4F8;
+  box-shadow: 4px 4px 8px #BCCBDA, -4px -4px 8px #FFFFFF, inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #A0B9D0;
+  border-radius: 5px;
+}
+#dark .neu_action_button__root{
+}
+
+#light .neu_action_button__root p{
+  padding: 12px 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 190%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #101010;
+}
+#dark .neu_action_button__root p{
+  
+}
+
+#light .neu_action_button__popup{
+  background: linear-gradient(180deg, #DDA01A -18%, #FEC83A 116%);
+  box-shadow: 6px 8px 8px rgba(42, 46, 56, 0.12);
+  border-radius: 5px;
+}
+#dark .neu_action_button__popup{
+
+}
+
+#light .neu_action_button__popup p{
+  padding: 12px 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 190%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1C1C1C;
+}
+#dark .neu_action_button__popup p{
+}
+
+#light .neu_group_action_button__root{
+  background: #EFF4F8;
+  padding: 3px 5px 5px 3px;
+  box-shadow: -1px -1px 0px #FFFFFF, -2px -2px 2px #B8CCE0, inset -1px -1px 0px #FFFFFF;
+  border-radius: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+#dark .neu_group_action_button__root{
+}
+
+#light .neu_group_action_button__container{
+  padding: 7px 15px;
+  background: #EFF4F8;
+  box-shadow: 4px 4px 8px #C9D9E8, -4px -4px 8px #FFFFFF;
+  border-radius: 20px;
+  color: #1C1C1C;
+}
+#dark .neu_group_action_button__container{
+}
+
+#light .neu_group_action_button__root .active{
+  padding: 7px 15px;
+  background: #2B2B2E;
+  box-shadow: 4px 4px 8px #C9D9E8, -4px -4px 8px #FFFFFF;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+#dark .neu_group_action_button__root .active{
+}
+
+#light .neu_social_icon_up_button__root{
+  display: inline-block;
+  background: #EFF4F8;
+  padding: 8px;
+  box-shadow: 4px 4px 8px #C9D9E8, -4px -4px 8px #FFFFFF;
+  border-radius: 40px;
+}
+#dark .neu_social_icon_up_button__root{
+}
+
+#light .neu_social_icon_up_button__container{
+  padding: 4px;
+  background: #2B2B2E;
+  color: #FACB30;
+  border-radius: 30px;
+}
+
+#dark .neu_social_icon_up_button__container{
+  
+}

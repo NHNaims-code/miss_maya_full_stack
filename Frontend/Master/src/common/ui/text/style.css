@@ -1,0 +1,11 @@
+#light .neu_text_up__root{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #EFF4F8;
+  text-shadow: 1px 1px 1px #B6C8DA, -1px -1px 1px #FFFFFF;
+}
+#dark .neu_text_up__root{
+}

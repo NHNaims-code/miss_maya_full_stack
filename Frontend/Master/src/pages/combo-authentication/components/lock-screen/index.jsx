@@ -1,33 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import NeuActionButton from '../../../../common/ui/button/NeuActionButton'
 import NeuSocialIconUpButton from '../../../../common/ui/button/NeuSocialIconUpButton'
 import NeuCheckBox from '../../../../common/ui/input/NeuCheckBox'
 import NeuRoundedDownInput from '../../../../common/ui/input/NeuRoundedDownInput'
 import NeuHorizontalLineUp from '../../../../common/ui/line/NeuHorizontalLineUp'
 import NeuTextUp from '../../../../common/ui/text/NeuTextUp'
+import { unlockScreen } from '../../../../features/settings.slice'
 import './style.css'
 
 export default function LockScreen({}) {
 
-  const [isLocked, setIsLocked] = useState(true)
+  const isLocked = useSelector((state) => state.settings.value.isLocked)
+  console.log({isLocked})
+  const dispatch = useDispatch()
 
-  const handleUnlock = () => {
-    setTimeout(() => {
-      setIsLocked(false)
-    }, 100);
-  }
+  
+  useEffect(() => {
+    console.log("hi")
+    console.log({isLocked})
+  }, [isLocked])
   return (
-    <div className='flex flex-col items-center'>
-      {
-        isLocked && (
-          <div className="lock_screen__popup absolute w-screen overflow-hidden h-screen z-50 top-0 left-0 flex justify-center items-center">
-            <img className='full' src="/assets/images/lock_screen_image.svg" alt="" />
-            <div className="absolute top-[280px]">
-              <NeuActionButton onClick={handleUnlock} successText='UNLOCK' className='mt-3'>UNLOCK</NeuActionButton>
-            </div>
-          </div>
-        )
-      }
+    <div className='flex flex-col items-center'>      
       <div className="sign_in_profile_image__root mt-16">
         <div style={{backgroundImage: 'url(/assets/brand/maya.jpg)'}} className="bg-white w-full h-full bg-no-repeat bg-cover bg-center"/>
       </div>

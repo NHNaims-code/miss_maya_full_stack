@@ -1,0 +1,43 @@
+#light .subscription_center__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2B2B2E;
+}
+#dark .subscription_center__title{}
+
+.subscribe__email{
+  width: 415px;
+  padding: 12px 15px;
+  background: #1C1C1C;
+  box-shadow: inset 0px -2px 5px #4E4E57, inset 0px 4px 8px #101010;
+  border-radius: 30px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+
+  letter-spacing: 0.01em;
+
+  /* Greys/5 */
+
+  color: #7F838F;
+}
+
+.subscribe__description{
+  width: 400px;
+  margin: 0 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #AEAEBB;
+}

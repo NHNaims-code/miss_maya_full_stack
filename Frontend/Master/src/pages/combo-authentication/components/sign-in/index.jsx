@@ -1,13 +1,26 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import NeuActionButton from '../../../../common/ui/button/NeuActionButton'
 import NeuSocialIconUpButton from '../../../../common/ui/button/NeuSocialIconUpButton'
 import NeuCheckBox from '../../../../common/ui/input/NeuCheckBox'
 import NeuRoundedDownInput from '../../../../common/ui/input/NeuRoundedDownInput'
 import NeuHorizontalLineUp from '../../../../common/ui/line/NeuHorizontalLineUp'
 import NeuTextUp from '../../../../common/ui/text/NeuTextUp'
+import { setProfile } from '../../../../features/profile.slice'
 import './style.css'
 
 export default function SignIn({}) {
+
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const handleSignIn = async(e) => {
+    e.preventDefault()
+
+    dispatch(setProfile({userID: '12345678'}))
+    navigate('/')
+  }
   return (
     <div className='flex flex-col items-center'>
       <div className="sign_in_profile_image__root mt-16">
@@ -15,7 +28,7 @@ export default function SignIn({}) {
       </div>
       <h1 className='profile_page__title uppercase mt-10'>Login</h1>
 
-      <form action="" className='w-full mt-10 px-10'>
+      <form onSubmit={handleSignIn} className='w-full mt-10 px-10'>
         <NeuRoundedDownInput placeholder='Email / Username'/>
         <NeuRoundedDownInput className='mt-5' placeholder='Password' type="password"/>
 

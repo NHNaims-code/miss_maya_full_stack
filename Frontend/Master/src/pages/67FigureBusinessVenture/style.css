@@ -1,0 +1,6 @@
+#light .six_seven_figure_business_venture__card_container{}
+#dark .six_seven_figure_business_venture__card_container{
+  background: #222222;
+  box-shadow: inset -10px -10px 34px rgba(68, 68, 68, 0.7), inset 10px 10px 34px rgba(0, 0, 0, 0.8);
+  border-radius: 40px;
+}

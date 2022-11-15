@@ -1,15 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import NeuGroupActionButton from '../button/NeuGroupActionButton'
 import NeuRoundedDownContainer from '../container/NeuRoundedDownContainer'
 import './style.css'
 
 export default function NeuSliderSelect({onChange=()=>{}, small=false, data=[]}) {
 
-  const [selectedItem, setSeletedItem] = useState(data[0].text)
+  const [searchParams, setSearchParams] = useSearchParams()
+  const navigate = useNavigate()
+
+  const active = searchParams.get(data[0].query || '')
 
   const handleChangeItemSelected = (item) => {
-    setSeletedItem(item.text)
-    onChange(item)
+    navigate(item.action)
   }
 
   return (
@@ -23,7 +26,7 @@ export default function NeuSliderSelect({onChange=()=>{}, small=false, data=[]})
           data.map((item, index) => (
             <div onClick={() => handleChangeItemSelected(item)} key={index} className="flex flex-col space-y-5 z-10">
               {
-                selectedItem == item.text ? (
+                active == item?.active ? (
                   <div className="neu_slider_select__bar flex justify-between items-center px-[3px] z-10">
                     <div className="circle"/>
                     <img className='mt-4' src="/assets/images/select_slider_cap.svg" height={42} width={35} alt="" />
@@ -39,10 +42,10 @@ export default function NeuSliderSelect({onChange=()=>{}, small=false, data=[]})
               }
               <div className="">
                 {
-                  selectedItem == item.text ? (
-                    <NeuGroupActionButton small={small} icon={item.icon} isActive={true}>{item.text}</NeuGroupActionButton>
+                  active == item?.active ? (
+                    <NeuGroupActionButton small={small} icon={item?.icon} isActive={true}>{item?.text}</NeuGroupActionButton>
                   ) : (
-                    <NeuGroupActionButton small={small} icon={item.icon}>{item.text}</NeuGroupActionButton>
+                    <NeuGroupActionButton small={small} icon={item?.icon}>{item?.text}</NeuGroupActionButton>
                   )
                 }
               </div>

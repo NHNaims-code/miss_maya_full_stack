@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 import NeuDownContainer from '../../../../common/ui/container/NeuDownContainer'
 import NeuUpContainer from '../../../../common/ui/container/NeuUpContainer'
 import { switchLeftMenu, switchRightMenu } from '../../../../features/collapse.slice'
@@ -12,7 +13,7 @@ export default function MenuItem({menu, collasped = false}) {
   return (
     <div className='flex items-start space-x-10 cursor-pointer max-w-[380px]'>      
       {
-        !collasped && <div className="flex-grow ">
+        collasped && <div className="flex-grow ">
         <NeuUpContainer onClick={() => setIsMenuOpen(!isMenuOpen)} style={{display: 'block', padding: `${menu.large && '0px'}`}}>
           <div className={`flex items-center p-3 ${menu.large && ' py-12 border-2 rounded-[10px] border-yellow-200'}`}>
             <img className='mr-4' src={menu.icon} width={24} height={24} alt="" />
@@ -26,12 +27,14 @@ export default function MenuItem({menu, collasped = false}) {
                 <div className="p-4">
                 {
                   menu.subMenu.map((me , index)  => (
-                    <NeuUpContainer style={{display: 'block'}} className='mt-5'>
-                      <div className="flex items-center p-3">
-                        <img className='mr-4' src={me.icon} alt="" />
-                        <p className='text-golden-bold'>{me.title}</p>
-                      </div>
-                    </NeuUpContainer>
+                    <Link to={`/${menu.title.split(' ').join('_').split('-').join('_').toLowerCase()}?menu=${me.title.split(' ').join('_').split('-').join('_').toLowerCase()}`}>
+                      <NeuUpContainer style={{display: 'block'}} className='mt-5'>
+                        <div className="flex items-center p-3">
+                          <img className='mr-4' src={me.icon} alt="" />
+                          <p className='text-golden-bold'>{me.title}</p>
+                        </div>
+                      </NeuUpContainer>
+                    </Link>
                   ))
                 }
                 </div>

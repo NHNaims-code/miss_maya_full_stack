@@ -1,0 +1,100 @@
+#light .contact_center__root{
+  background: #EFF4F8;
+}
+#dark .contact_center__root{
+}
+
+#light .contact_center__root h1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+
+  /* Greys/3 */
+
+  color: #2B2B2E;
+}
+#dark .contact_center__root h1{
+}
+
+#light .contact_center__left{
+  background: #EFF4F8;
+  box-shadow: 4px 4px 8px #B7C7D7, -4px -4px 8px #FFFFFF;
+  border-radius: 40px;
+}
+#dark .contact_center__left{
+
+}
+
+#light .contact_center__profile_root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  background: #EFF4F8;
+  box-shadow: inset -5px -5px 8px #FFFFFF, inset 4px 4px 8px #889FB6;
+  border-radius: 100px;
+}
+#dark .contact_center__profile_root{}
+
+#light .contact_center__profile_root .image_container{
+  width: 140px;
+  height: 140px;
+  border: 8px solid #EFF4F8;
+  box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #A0B9D0;
+  filter: drop-shadow(4px 4px 8px #BCCBDA) drop-shadow(-4px -4px 8px #FFFFFF);
+  border-radius: 150px;
+}
+#dark .contact_center__profile_root .image_container{}
+
+#light .contact_center__content{
+  background: linear-gradient(180deg, #DDA01A -18%, #FEC83A 116%);
+}
+#dark .contact_center__content{}
+
+#light .contact_center__content h1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2B2B2E;
+}
+#dark .contact_center__content h1{}
+
+#light .contact_center__content p{}
+#dark .contact_center__content p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 5px;
+  line-height: 190%;
+  text-align: center;
+  color: #2B2B2E;
+}
+
+#light .contact_center__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background: #EFF4F8;
+  box-shadow: 4px 4px 8px #B7C7D7, -4px -4px 8px #FFFFFF;
+  border-radius: 10px;
+}
+#dark .contact_center__icon{}
+
+#light .contact_center__icon_section p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: #2B2B2E;
+}
+#dark .contact_center__icon_section p{}

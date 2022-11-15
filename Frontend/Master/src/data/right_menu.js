@@ -173,13 +173,13 @@ export default [
   {
     title: 'SUBSCRIBE', icon: '/assets/images/EMAIL.svg',
     subMenu: [
-      {title: 'NOT SET YET', icon: '/assets/images/right-arrow.svg'}
+      {title: 'SUBSCRIBE CENTER', icon: '/assets/images/right-arrow.svg'}
     ]
   },
   {
     title: 'CONTACT US', icon: '/assets/images/contact-us.png',
     subMenu: [
-      {title: 'NOT SET YET', icon: '/assets/images/right-arrow.svg'}
+      {title: 'CONTACT CENTER', icon: '/assets/images/right-arrow.svg'}
     ]
   },
 ]

@@ -130,3 +130,15 @@
   border-radius: 5px;
   margin-right: 10px;
 }
+
+
+#light .neu_otp_input__root input{
+  width: 160px;
+  box-shadow: inset -3px -3px 10px #FFFFFF, inset 4px 4px 8px #889FB6;
+  background: #EFF4F8;
+  border-radius: 7px;
+  text-align: center;
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+#dark .neu_otp_input__root input{}

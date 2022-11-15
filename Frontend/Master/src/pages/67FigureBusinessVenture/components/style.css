@@ -1,0 +1,44 @@
+#light .figure_business_venture__root{}
+#dark .figure_business_venture__root{
+
+}
+
+#light .figure_business_venture__root__container{}
+#dark .figure_business_venture__root__container{
+  /* background-color: #E3E8F0; */
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+#light .figure_business_venture__content_wrapper{}
+#dark .figure_business_venture__content_wrapper{
+  /* background-color: #EBF3FF; */
+
+}
+
+#light .figure_business_venture_text{}
+#dark .figure_business_venture_text{
+  padding: 10px 17px;
+  background: #EBF3FF;
+  box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #999FB0;
+  border-radius: 5px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #575757;
+}
+
+#light .figure_business_venture__root p{}
+#dark .figure_business_venture__root p{
+  position: absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  /* line-height: 90px; */
+  /* identical to box height */
+  color: #274AFF;
+}

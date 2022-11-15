@@ -10,6 +10,8 @@ import NeuSearchInput from '../../common/ui/input/NeuSearchInput';
 import { useDispatch, useSelector } from 'react-redux';
 import { switchDarkTheme, switchLightTheme } from '../../features/theme.slice';
 import { switchLeftMenu, switchRightMenu } from '../../features/collapse.slice';
+import { HiLockClosed } from "react-icons/hi";
+import { lockScreen } from '../../features/settings.slice';
 
 export default function Header() {
 
@@ -23,6 +25,11 @@ export default function Header() {
     if(theme.activeTheme == 'light'){
       dispatch(switchDarkTheme())
     }
+  }
+
+  const handleLockScreen = () => {
+    console.log('hit')
+    dispatch(lockScreen())
   }
 
   
@@ -52,7 +59,7 @@ export default function Header() {
           <li className='hidden 2xl:block'>
             <Link to={'#'}><NeuUpContainer className='rounded-full'><RiDribbbleFill size={18}/></NeuUpContainer></Link>
           </li>
-          <li>
+          <li className='hidden 2xl:block'>
             <Link to={'#'}><NeuUpContainer className='rounded-full'><RiPinterestLine size={18}/></NeuUpContainer></Link>
           </li>
           <li>
@@ -64,15 +71,18 @@ export default function Header() {
 
       <div className="flex items-center">
         <div className="space-x-10 mr-5 2xl:mr-14">
-          <NeuUpContainer>
+          <NeuUpContainer className={`cursor-pointer`}>
             <img src='/assets/images/icon_bell.png'/>
           </NeuUpContainer>
-          <NeuUpContainer>
+          <NeuUpContainer className={`cursor-pointer`}>
             <img src='/assets/images/icon_message.png'/>
           </NeuUpContainer>
           <NeuUpContainer onClick={handleSwitchTheme} className='hover:cursor-pointer'>
             {theme.activeTheme == 'light' && <HiSun size={22}/>}
             {theme.activeTheme == 'dark' && <HiOutlineMoon size={22}/>}        
+          </NeuUpContainer>
+          <NeuUpContainer className={`cursor-pointer`} onClick={handleLockScreen}>
+            <HiLockClosed size={22}/>
           </NeuUpContainer>
         </div>
         <NeuVerticalLine/>

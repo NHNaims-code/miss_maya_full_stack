@@ -39,7 +39,20 @@ h4{
   text-transform: uppercase;
 }
 
-.text-golden-bold{
+#light .text-golden-bold{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background: #C49530;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+#dark .text-golden-bold{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;

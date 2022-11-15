@@ -1,6 +1,6 @@
 export default [
   {
-    title: 'ONBOARDING GUIDE', icon: '/assets/images/onboarding-guied.svg', large: true,
+    title: 'ONBOARDING GUIDE', icon: '/assets/images/onboarding-guied.svg', large: true, frist: true,
     subMenu: [
       {title: 'STEP-BY-STEP GUIDE', icon: '/assets/images/right-arrow.svg'},     
     ]
@@ -49,7 +49,7 @@ export default [
     ]
   },
   {
-    title: 'STAGE 1', icon: '/assets/images/stage.svg', large:true,
+    title: 'BUSINESS INCUBATOR', icon: '/assets/images/stage.svg', large:true, stage: 'I',
     subMenu: [
       {title: 'NOT SET YET', icon: '/assets/images/right-arrow.svg'}
     ]
@@ -67,7 +67,7 @@ export default [
     ]
   },
   {
-    title: 'STAGE 2', icon: '/assets/images/stage.svg', large:true, 
+    title: 'BUSINESS ACCELERATOR', icon: '/assets/images/stage.svg', large:true, stage: 'II',
     subMenu: [
       {title: 'NOT SET YET', icon: '/assets/images/right-arrow.svg'}
     ]
@@ -97,7 +97,7 @@ export default [
     ]
   },
   {
-    title: '7 -FIGURE  SCALE-UP', icon: '/assets/images/7-figure.png',
+    title: '7-FIGURE  SCALE-UP', icon: '/assets/images/7-figure.png', large: true, stage: 'III',
     subMenu: [
       {title: 'NOT SET YET', icon: '/assets/images/right-arrow.svg'}
     ]
